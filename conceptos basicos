@@ -1,0 +1,55 @@
+#Conceptos basicos
+
+##Seguridad informatica
+La necesidad de seguridad de la informacion ha ido aumentando al igual que las ciencias de la computacion y las tegnologias de la informacion, de ese modo las herramientas de seguridad empleadas tambien la han hecho.
+Podemos definir como seguridad informatica como: 
+
+		Un conjunto de metodos y herraminetas destinados a proteger la informacion y por ende los sistemas informaticos ante cualquier amenaza, un proceso en el cual participan ademas personas. Concienciarlas de su importancia en el proceso es algo critico.
+La seguridad informatica no es un bien medible, pero en cambio podemos desarrollar diversas herramientas para cuantificar de alguna forma "inseguridad informatica".
+
+##Criptografia.
+**Criptografia** Se refiere a una rama de las matematicas y en la actualida tambien en la informatica, que hace uso de metodos y tecnicas con el objeto principal de proteger un mensaje o archivo por medio de un algoritmo.
+
+La criptografia es la ciencia que estudia el resguardo de la privacidad e integridad de la infromacion, es una incumbencia de la matematica que persigue asegurar la confidencialidad de textos, como asi tambien la integridad de los datos y la identidad de los particiapantes en un intercambio de informacion.
+
+	El termino criptografia proviene del griego "kryptos" que significa esconder u ocultar y "gráphen" escritura, y su definicion por el diccionario como "el arte de escribir con clave secreta o de modo enigmatico".
+
+La criptografia estudia el modo de transformar un mensaje (texto plano) en un mensaje encriptado(criptograma) mediante una operacion de cifrado que hace imposible a un tercero tomar conocimiento del contenido del mensaje
+Generalmente se usa un metodo matematico para cifrar datos con el fin de hacerlos incomprensibles para cualuiera que no posea su clave,osea la informacion secreta necesaria para descifrar los datos cifrados.
+Basicamente es cifrar un texto, transformandolo en ininteligible, para luego descifrarlo y volverlo nuevamente inteligible.
+
+**El algoritmo** es el conjunto de operaciones que permite hacer incomprensible el mensaje descomponiendolo en una secuencia de caracteres no inteligibles inmediatamente.
+
+**La clave** es el elemento que , asociado a un algoritmo criptografico, permite la encriptacion y desencriptacion del texto cifrado.
+
+La criptografia tiene funciones u objetivos los cuales tres de ellos deben cumplirse para poder decir que un sistema "es seguro",  y estos son:
+*Confidencialidad
+*Integridad
+*Autenticidad
+*No repudio
+
+##Criptografia Simetrica
+Se refiere al modelo matemático que utiliza la misma clave en las operaciones de cifrado y descifrado. La seguridad de este tipo de sistemas radica principalmente en mantener en secreto la clave y no se preocupa necesariamente por el algoritmo de cifrado, es decir, que no es de mucha ayuda conocer el algoritmo que se utilizo.
+Uno se sus principales incovenientes con este tipo de sistema no esta ligado a su seguridad, sino al intercambio de claves. El canal utilizado para el intercambio debe ser lo suficientemente seguro. Una vez remitente y destinatario hayan intercambiado claves pueden usarlas para comunicarse con seguridad.
+Otro problema es el numero de claves que se necesitan. Si tenemos un numero n de personas que necesitan comunicarse entre si, se necesitan n/2 claves para cada pareja de personas que tengan que comunicarse de modo privado. Esto puede funcionar con un grupo reducido de personas pero es imposible con grupos más grandes.
+
+##Criptografia asimetrica
+Se refiere a un modelo matemático criptografico que genera un par de claves, lo que una encripta y la otra desencripta, llamadas *clave privada y clave publica*.
+
+**La clave Privada** no se transmite nunca y se mantiene secreta. **La clave Publica** por el contrario se puede y se debe poner a disposicion de cualquiera, pues con esa finalidad fue creada. Esto no implica ningun problema de seguridad dado que es imposible deducir la clave privada apartir de la publica.
+
+Se puede cifrar un mensaje con la clave publica y descifrar con la clave privada, danda confidencialidad al mensaje, ya que solo podra ser visto por el usuario con la correspondiente clave privada.
+
+Tambien se puede cifrar con la clave privada descifrar con la clave publica, lo cual no proporciona confidencialidad ya que cualquiera puede descifrar el mensaje con la clave publica, sin embargo esto implica un identidad del usuario o la autenticidad.
+
+La ventaja de este sistema es que la clave privada no tiene que transmitirse entre las partes y tampoco es necesario tener diferentes claves, es suficiente un par de claves para cada usuario.
+
+##Certificado digital
+Es un documento electronico emitido por una empresa denominada "Autoridad de Certificaion" o *CA* que garantiza la vinculacion entre la identidad de un sujeto o entidad y su clave publica.
+
+##Autoridad de Certificacion
+Una CA, por sus siglas en ingles(Certification Authority) o entidad de certificacion, es una persona juridica que presta servicios de emision, gestion, cancelacion u otros servicios inherentes a la certificacion digital. Asi mismo puede asumir funciones de registro y verificacion.
+Disponen de sus propios certificados publicos, cuyas claves privadas asosiadas son empleadas por las CA para firmar los certificados que emiten.
+
+##Funcion de resumen o Hash
+Una funcion de resumen o algoritmo hash, enterminos informaticos, se referiere a una funcion o metodo para generar claves o llaves que identifican de manera casi univoca a un documento, archivo, registro, etc. Como resusltado de esta funcion se denomina resumen o *hash*.
