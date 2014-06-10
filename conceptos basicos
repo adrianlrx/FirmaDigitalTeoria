@@ -53,3 +53,7 @@ Disponen de sus propios certificados publicos, cuyas claves privadas asosiadas s
 
 ##Funcion de resumen o Hash
 Una funcion de resumen o algoritmo hash, enterminos informaticos, se referiere a una funcion o metodo para generar claves o llaves que identifican de manera casi univoca a un documento, archivo, registro, etc. Como resusltado de esta funcion se denomina resumen o *hash*.
+
+##Firma digital
+Se entiende por firma digital al resultado de aplicara un documento digital un procedimiento matematico que requiere informacion de exclusivo conocimiento de firmante encontrandose esta bajo su absoluto control. La firma digital debe ser susceptible de verificacion por terceras partes tal ue dicha verificacion simultaneamente permita identificar al firmante y detectar cualquier alteracion del documento digital posterior a sus firma.
+La firma digital no es una contraseña, tampoco lo es la clave privada; la firma digital es un procedimiento que consiste en aplicar a un documento digital, la clave privada del firmate, la cual es de su exclusivo conocimiento y solo el tiene aceso, de modo que no puede negar su autoria(no repudio), permitiendo al receptor por medio del procedimiento de verificacion, acredite la identidad o autoria de firmanate(autentificacion) y detectar cualcuier alteracion del documento digital con posteridad a la firma(integridad).
