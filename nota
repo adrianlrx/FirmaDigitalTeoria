@@ -1,0 +1,31 @@
+
+1---
+	objetivos del trabajo
+		objetivos generales
+			Implementacion del proceso para la obtencion de una firma digital amparada por la ley 4.017 
+		
+		objetivos especificos
+			Diferenciar una firma electronica y una firma digital
+			Definir el proceso de la firma digital
+			Distinguir elementos de la firma digital
+			Reconocer el proceso para obtener un par de claves validos
+			Identificar la importancia juridica de la firma digital
+			Evaluar los algoritmos principales de firma digital
+			Interpretar las reglamentaciones y legislaciones existentes
+
+	
+	Fundamentacion
+	La firma digital es una tecnologia segura, formal y legal el cual se logra con tecnologias criptograficas que garantizan la autenticidad, integridad y el no repudio de los documentos firmados equivalentes juridicamente a las firmas manuscritas.
+
+	En este trabajo se pretende demostrar mediante una aplicacion el proceso de la firma digital e identificar sus propiedades tecnicas y juridicas.
+
+		Introduccion
+	Cuando se habla de firma digital, intuitivamente se piensa que puede ser una firma escaneada, una contraseña o en el mejor de los casos que tiene que ver con biometría o encriptación de datos; pero en realidad no es así. Realmente se entiende por firma digital como un resultado de aplicar algún procedimiento a un mensaje o documento digital para garantizar la autenticidad e integridad de los datos contenidos en las mismas y la no repudiación del firmante [1].
+
+	Los procedimientos suelen ser matemáticos o criptográficos con el objetivo de  reforzar la seguridad y evitar la falsificación [6]. La firma es susceptible a la verificación de terceras partes, para que de manera simultánea se pueda verificar la identidad del firmante y cualquier alteración del documento después de su firma [6].
+
+	La firma digital es una estandar internacional para transacciones de documentos y mensaje en internet, especialmente para transacciones comerciales y financieras.
+
+	El potencial de esta herramienta es muy amplia, ya que elimina la restricciones legales para efectuar transacciones con valor juridico. Por tal motivo su utilizacion aumenta dia a dia, y es imperativo conocer sus funcionamiento, asi  como sus ventajas y desventajas, como tambien el amparo legal que ofrece nuestro pais a esta tecnologia.
+
+	
