@@ -1,0 +1,80 @@
+#Introduccion a la seguridad Informatica
+
+Las necesidades de seguridad de la informacion han ido evolucionando al igual que las ciencias de la computacion y las tecnologias de informacion. De ese modo, las herramientas de seguridad empleadas tambien lo han hecho.
+
+En sus comienzos, la seguridad consistia en el uso de medios fisicos, tales como cajas fuertes o armarios con cierre de seguridad. Poco despues, aparecieron los medios administrativos, como lo son los contratos de empleados para salvaguardar informacion confidencial de la empresa.
+Con la llegada de la computacion, hicieron falta nuevas herramientas de seguridad diseñadas para proteger los datos y evitar la intrusion no autorizadas. Estas herramientas se conocen con el nombre de "seguridad informatica".
+
+Entonces como definimos a la seguridad? Seguramente diremos "libre y exento de todo peligro",  la definimos como "cualidad de seguro".
+Apartir de esto podemos decir por seguridad informatica es la "la cualidad de un sistema informatico exento de peligro". Si buscamos una definicion más tecnica, obtendremos algo como:
+	Un conjunto de metodos y herramientas destinadas a proteger la informacion y por ende los sistemas informaticos ante cualquier amenaza, un proceso en el cual participan ademas personas. Concientizarlas de su importancia en el proceso sera algo critico.
+
+La seguridad informatica no es medible, en cambio se pueden diseñar diversas herramientas para cuantificar de alguna forma nuestra inseguridad informatica.
+
+En el estudio de la seguridad informatica podriamos plantearlo desde dos enfoques distintos aunque complementarios:
+- La seguridad fisica:puede asosiarse a la proteccion del sistema ante amenazas fisicas, incendios,inundaciones, control de accesos de personas, etc.
+
+- La seguridad Logica:la proteccion de la informacion en su propio medio, mediante el enmascaramiento de la misma usando tecnicas de criptografia.
+
+La gestion de seguridad esta en medio de los dos: los planes de contingencia,politicas de seguridad, normativas, etc.
+
+
+Existen 3 principios basicos de la seguridad informatica: el del acceso más facil, el de la caducidad del secreto y el de la eficiencia de las medidas tomadas.
+
+Primer Principio: existira una diversidad de frentes desde los que puede producirse un ataque, tanto internos o externos, esto dificultara el analisis de riesgo ya que el atacante aplicara la filosofia del ataque hacia el punto más debil: el equipo o las personas.
+
+Segundo Principio: Los datos solo deben protegerse sólo hasta que ese secreto pierda su valor como tal, por tanto se habla de caducidad del sistema de proteccion, osea el tiempo que debe mantenerse la confidencialidad o secreto del dato.
+
+Tercer Principio: Las medidas de control se implementan para que tengan un comportamiento efectivo, eficiente, sean faciles de usar y apropiadas al medio.
+	- Efectivo: que funcionen en el momento oportuno
+	- Eficiente: que optimicen los recursos del sistema
+	- Apropiadas: que pasen desapercibidas para el usuario.
+
+	Ningun sistema de control resulta efectivo hasta que debemos utilizarlo al surgir la necesidad de aplicarlo. Junto con la concienciacion de los usuarios, este sera uno de los grandes problemas de la gestion de seguridad informatica.
+
+Amenazas del sistema
+La amenazas afectan principalmente el hardware, el software y los datos.
+Estas se deben a:
+	- Interrupcion
+	- Interceptacion
+	- Modificacion
+	- Generacion
+
+En la amenaza de interrupcion el sistema se daña, pierde o deja de funcionar en algun punto. Su deteccion es inmediata. Como ejemplo la Destruccion de hardware, fallos de sistema operativo, borrado de programas o datos.
+
+En la amenaza de interceptacion el acceso a la informacion del sistema por parte de entes no autorizados. Su deteccion es dificil, a veces no deja huellas. Ejemplos como copias ilicitas de programas, escucha de linea de datos.
+
+En la amenaza de modificacion el acceso no autorizado al sistema cambia el entorno para su beneficio. Su deteccion es dificil segun sus circunstancias. Son muy comunes la modificacion de la base de datos o la modificacion de elementos del hardware.
+
+En la amenaza de generacion se crea nuevos objetos dentro del entorno del sistema, su deteccion es dificil. Tales como añadir transacciones de red o añadir registros en la base de datos.
+
+Debilidades del sistema
+Hardware
+	Pueden producirse errores intermitentes, conexiones sueltas, desconexion de tarjetas, etc.
+Software
+	Puede producirse la sustraccion de programas, ejecucion erronea, modificacion, defectos en llamadas al sistema, etc.
+Datos
+	Puede producirse la alteracion de contenidos, introduccion de datos falsos, manipulacion fraudulenta de datos, etc.
+Memoria
+	Puede producirse la introduccion de virus, mal uso de la gestion de memoria, bloqueo del sistema, etc.
+Usuarios
+	Puede producirse la suplantacion de identidad, el acceso no autorizado, visualizacion de datos confidenciales, etc.
+
+Es muy dificil diseñar un plan que contemple minimizar de forma eficiente todas estas amenazas, y que ademas se entienda y pase desapercibido por los usuarios.
+Debido al principio de acceso mas facil, el responsable de la seguridad informatica no se debera descuidar de ninguno de los cinco elementos susceptibles de ataque al sistema.
+
+Estos son los tres elementos basicos de la seguridad informatica:
+* Confidencialidad.
+	Los componentes del sistema seran accesibles sólo por aquelllos usuarios autorizados a ello.
+* Integridad. 
+	Los componentes del sistema sólo pueden ser creados y modificados por los usuarios autorizados
+* Disponibilidad.
+	Los usuarios deben tener disponibles todos los componentes del sistema cuando asi lo deseen.
+
+
+No repudio de Origen y Destino.
+Este termino fue introducido en los ultimos años como una caracteristica más de los elementos que conforman la seguridad en un sistema informatico.
+Esta asosiado a la aceptacion de un protocolo de comunicacion entre emisor y receptor (Cliente y servidor) normalmente a traves del intercambio de sendos certificados digitales de autenticacion
+Se habla entonces de NO Repudio de Origen y NO Repudio de Destino, forzando a que se cumpla todas las operaciones por ambas partes en una comunicacion.
+
+

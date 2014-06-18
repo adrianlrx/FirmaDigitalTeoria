@@ -1,0 +1,53 @@
+ElGammal
+Es una variante sobre el algoritmo de Diffie-Hellman y deriva su seguridad de las mismas ideas, esta basado en el problema del logaritmo discreto. Pese a que no es conocido como lo es el RSA, ElGammal todavia es ampliamente usado, es el algoritmo elegido para la mayoria de las claves para cifrado de OpenPGP.
+
+Algoritmo de Generacion de Claves para el cifrado ElGammal de clave publica.
+Cada entidad crea una clave publica y una correspondiente clave privada.
+Cada entidad A debe hacer la siguiente:
+	1 - Generar un Primo largo P aleatorio y un generador α del grupo multiplicativo Z*p de los modulos enteros de P
+	2 - Selecionar un entero A aleatorio, 1 <= A <= P-2, y computar α^A mod P
+	3 - La clave publica de A es (P,α, α^A), la clave privada es A.
+
+Algoritmo de Cifrado ElGammal de Clave publica
+La entidad B cifra el mensaje m para otra entidad A, la cual lo decifra
+(1) - Cifrado. B debe hacer lo siguiente:
+	1 - Obtener la clave publica autentica de A (p,α,α^A).
+	2 - Representar el mensaje como un entero m en el rango {0,1,...,P-1}.
+	3 - Seleccionar un entero k aleatorio, 1 <= k <= P-2
+	4 - Computar γ = α^k mod P y δ = m · (α^A)^k mod P
+	5 - Enviar el texto cifrado c = (γ, δ) para A.
+(2) - Decifrado. Para recuperar el texto plano m de c, A debe hacer lo siguiente:
+	1 - Usar la clave privada A para computar γ^(P-1-A) mod P.
+	2 - Recuperar m computando (γ^-A) · δ mod P.
+
+
+
+Codigo en Java.
+public class RandomKeyElGamalExample{
+    public static void main(String[] args) throws Exception {
+        byte[] input = new byte[] { (byte)0xbe, (byte)0xef };
+        Cipher cipher = Cipher.getInstance("ElGamal/None/NoPadding");
+        KeyPairGenerator generator = KeyPairGenerator.getInstance("ElGamal");
+        SecureRandom random = Utils.createFixedRandom();
+
+        // creacion de las claves
+        generator.initialize(256, random);
+        KeyPair          pair = generator.generateKeyPair();
+        Key              pubKey = pair.getPublic();
+        Key              privKey = pair.getPrivate();
+
+        System.out.println("input : " + Utils.toHex(input));
+
+        // cifrado
+        cipher.init(Cipher.ENCRYPT_MODE, pubKey, random);
+        byte[] cipherText = cipher.doFinal(input);
+
+        System.out.println("cipher: " + Utils.toHex(cipherText));
+
+        // decifrado
+        cipher.init(Cipher.DECRYPT_MODE, privKey);
+        byte[] plainText = cipher.doFinal(cipherText);
+
+        System.out.println("plain : " + Utils.toHex(plainText));
+    }
+}

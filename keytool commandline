@@ -1,0 +1,4 @@
+ //Crea un par de claves RSA y
+ //los almacena en un keystore "testkeystore.jks"
+ keytool -genkey -alias testsender -keystore testkeystore.jks -keyalg RSA
+

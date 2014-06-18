@@ -1,0 +1,9 @@
+El Problema de la Factorizacion Entera IFP
+
+En seguridad muchas tecnicas criptograficas dependen de la intratabilidad del problema de la factorizacion de numeros enteros, el RSA como ejemplo.
+Estos algoritmos basan su seguridad en la debilidad de computo de las maquinas. Para un computador es relativamente trivial el calculo de enormes productos o potencias, pero el proceso contrario resulta muy costoso. Asi pues, su potencia reside en que no existe un metodo eficiente para factorizar numeros enteros muy grandes.
+
+
+El problema planteado es el siguiente:
+Dado un entero positivo n, encontrar la factorizacion prima; tal que sea, escribiendo n = p1*p2*...*pk.
+El problema de decidir si un entero es compuesto o primo parece ser en general, mucho mas facil que factorizar el problema.

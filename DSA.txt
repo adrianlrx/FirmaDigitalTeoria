@@ -1,0 +1,66 @@
+El Digital Signature Algoritm
+
+En 1991, el National Institute of Standards and Technology (NIST) propone un algoritmo de firma digital, el DSA. El DSA se convierte en Standard (FIFS 186) llamado Digital Signature Standard (DSS), y es el primer esquema reconocido por un gobierno.
+
+Este algoritmo es una variante de ELGammal, por lo tanto basado en el DLP. El DSS explicitamente requiere el uso del Secure Hash Algoritm (SHA-1).
+
+
+Algoritmo de generacion de claves para DSA
+Cada entidad crea una clave publica y su correspondiente clave privada.
+Cada entidad A debe hacer la siguiente:
+	1 - Selecionar un numero primo Q tal que 2^159 < Q < 2^160.
+	2 - Elegir t asi que 0 <=  t <= 8, y seleccionar un numero primo P donde 2^(511+64t) < P < 2^(512+64t), con la propiedad que Q divida (P-1).
+	3 - (Seleccionar un generador α del orden del grupo de Z*p)
+		3.1 - Seleccionar un elemento g € Z*p y computar α = g^(P-1)/Q mod P
+		3.2 - Si α = 1, volver a 3.1.
+	4 - Seleccionar un entero a aleatorio tal que 1 <= a <= Q-1
+	5 - Computar y = α^a mod P.
+	6 - La clave publica de A es (P,Q,α,y); la clave privada es a.
+
+Algoritmo de Generacion y verificacion de firmas en DSA.
+
+(*) Generacion de Firma. La entidad A debe hacer la siguiente:
+	1 - Seleccionar un entero secreto k aleatorio, 0 < k Q.
+	2 - Computar r = (α^k mod P) mod Q
+	3 - Computar k^-1 mod Q
+	4 - Computar s = k^-1 {h(m) + ar} mod Q
+	5 - La firma para m es el par (r,s).
+
+(*) Verificacion. Para verificar la firma de A (r,s) sobre m, B debe hacer lo siguiente:
+	1 - Obtener la clave autentica de A (P,Q,α,y).
+	2 - Verificar que 0 < r <Q y 0 < s < Q, sino rechazar firma
+	3 - Computar w = s^-1 mod Q y h(m).
+	4 - Computar u1 = w · h(m) mod Q y u2 = rw mod Q.
+	5 - Computar v = (α^u1 y^u2 mod P) mod Q.
+	6 - Aceptar la firma si y solo si v = r.
+
+
+
+Codigo en Java.
+public class BasicDSAExample{
+    public static void main(String[] args) throws Exception{
+
+        KeyPairGenerator keyGen = KeyPairGenerator.getInstance("DSA", "BC");
+        keyGen.initialize(512, new SecureRandom());
+
+        KeyPair keyPair = keyGen.generateKeyPair();
+        Signature signature = Signature.getInstance("DSA", "BC");
+
+        // generar firma
+        signature.initSign(keyPair.getPrivate(), Utils.createFixedRandom());
+        byte[] message = new byte[] { (byte)'a', (byte)'b', (byte)'c' };
+        signature.update(message);
+        byte[] sigBytes = signature.sign();
+
+        // verificar firma
+        signature.initVerify(keyPair.getPublic());
+
+        signature.update(message);
+
+        if (signature.verify(sigBytes)){
+            System.out.println("signature verification succeeded.");
+        } else{
+            System.out.println("signature verification failed.");
+        }
+    }
+}

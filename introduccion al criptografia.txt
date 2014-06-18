@@ -1,0 +1,78 @@
+#introduccion al criptografia
+
+##Breve Reseña Historica.
+La humanidad ha estado usando la ciencia de la criptografia o el arte de los mensajes secretos por miles de años para transmintir y guardar informacion confidencial. No hace mucho los gobiernos, especialmente los militares dedican muchos recursos en el desarrollo de esta ciencia para mantener sus secretos.
+Sin embargo, empezando en 1976 con la introduccion de la literatura abierta de la criptografia de clave publica por Diffie y Hellman la carrera no-militar y academica de la criptografia ha explotado. Este fue el primer sistema de clave publica que se dio a conocer. Este era un modelo abstracto de esquema criptografico cuyo objetivo era el acuerdo de clave sentre dos usuarios, El problema resisde en averiguar la clave compartidad por ambos y esta basado en el problema del logaritmo discreto(DLP).
+
+En 1978, aparecio el primer sistema criptografico de clave publica llevado a la practica, el RSA (llamado asi por sus creadores Rivest, Shamir y Adleman), aunque basado en el modelo de Diffie-Hellman, utiliza en cambio el problema de la factorizacion entera como base matematica. Hoy en dia todavia persiste como el sistema más usado para cifrar y firmar en internet.
+
+En 1985 aparece una variante basada en el DLP: el sistema criptografico de ElGammal. Aunque inicialmente fue diseñado para firmar, se propuso una modificacion para cifrar en la misma publicacion.
+
+El NIST (National Institute of Standards and Technology) adopto en 1994 el sistema DSA (Digital Signature Algoritm) como estandar para su uso por las organizaciones gubernaentales norteamericanas, integrandolo en el DSS(Digital Signature Standard). Este esquemade firma digital es una variante del sistema de ElGammal, y por tanto basado en el DLP. 
+
+Indepedientemente, en 1985 Koblitz y Miller introdujeron el concepto de criptografia de curva eliptica (ECDLP), tiene el mismo fundamento que el DLP, pero en lugar de usar enteros como simbolos de la informacion a cifrar, utiliza los puntos de una curva eliptica. Debido a las ventajas ofrecidas por las curvas elipticas, el crecimiento en investigacion ha desbordado las previsiones más optimistas.
+
+Para empiezos de este milenio hasta personas no-tecnicas empiezan a enteder la importancia de las tecnicas para mantener segura la informacion.
+
+##Que es Criptografia?
+Definimos Criptografia como el estudio de tecnicas matematicas relacionadas a la seguridad de informacion como confidencialidad, integridad de datos, autenticacion de entidades, y autenticacion de origen de datos.
+
+La criptografia no significa solamente un medio de proveer seguridad de informacion, sino que un es conjunto de tecnicas.
+
+
+La criptografia provee 4 tipos principales de servicios u objetivos relacionados a los datos que son transmitidos o guardados:
+
+* Confidencialidad, es un servicio para mantener el contenido de la informacion disponible solo a aquellos con autorizacion. Sereto es un termino sinonimo con confidencialida y privacidad.
+
+* Integridad, es un servicio que esta dirigido a la alteracion no autarizada de los datos. Para asegurar la integridad e los datos, uno debe tener la habilidad de detectar la manipulacion no autorizada de datos.
+
+* Autenticacion, es un servicio relacionado a la identificacion; esta funcion se aplica a ambas entidades e informacion. Dos partes que entran en comunicacion deben identficarse una a la otra.  La informacion enviada sobre un canal debe ser autenticada como el origen, fecha de origen, contenido de datos, tiempo de envio, etc. Por estas razoneseste aspecto de la criptografia esta dividido en dos clase: autenticacion de entidad y autenticacion de datos. La autenticacion de origen de datos implica que provee integridad de datos.
+
+* No Repudio, es un servicio que previene a una entidad la denegacion de compromisos o acciones previas. Cuando surge una disputa a causa de que una entidad niegue que tomo ciertas acciones, este es un medio de resolver la situacion si fuera necesaria. Por ejemplo, una Entidad puede autorizar la compra a otra entidad y luego negar más tarde que dio dicha autorizacion. Es un procedimiento que envuelve a una tercera parte de confianza que es necesaria para resolver disputas.
+
+Considerando primero la confidencialidad, esto solo una palabra sofisticada para el significado de "secreto", osea mantener los datos secretos. Para esto se usa la encriptacion, un proceso de tomar informacion legible y significativa, y transformarla en algo, que si alguien lo intercepta los datos ya no son legibles ni poseen  significado alguno. Como parte del proceso, existe una manera para para las partes autorizadas a ello para desencriptar los datos encriptados.
+
+Integridad significa mantener los datos en forma inalterada, miemtras que autenticacion significa saber el origen de los datos como quien los envia. Ninguno de estos servicios tiene algo que ver con confidencialidad, pensando tambien que podria querer confidencialidad. Considerando, por ejemplo, la transferencia de fondos envolviento una entidad financiera y alguna otra entidad. mientras la confidencialidad puede ser deseable, es de poca importancia comparando con la transferencia (la autenticacion) y estar seguro que la transferencia no ha sido alterada(la integridad). Una de las herramientas que ayudan a implementar estos servicios es la firma digital. LA firma digital tiene mucho en comun con la firma ordinaria,exepto que funciona mejor; cuando es propiamente usada es muy dificil de falsificar, previene cualquier alteracion del documento firmado, es decir cualquier alteracion en el documento tambien altera la firma; en contraste, las firmas ordinarias son notoriamente mucho más faciles de falsificar y esta fijadas a solo una pequeña parte del documento.
+
+El servico de No Repudio, previene a cualquiera ente de testificar que no haber enviado un documento que fue autenticado proveniente de este. Por ejemplo un persona puede decir que su clave privada fue robada. Este servicio es muy importante pero muy dificil de implementar.
+
+Tomandolos a todos juntos, la criptografia y sus usos e implementacioneshan empezado a ser esenciales para la tecnologia de la civilizacion actual.
+
+
+El resultado de aplicar tecnicas o metodos criptograficos  se los conoce como sistemas criptograficos o criptogramas.
+
+Existen varias maneras de clasificar los sistemas criptograficos; una de ellas lo 
+clasifica en  en sistemas simetricos y sistemas asimetricos.
+
+Los sistemas simetricos o de clave secreta son aquellas en donde cada pareja de usuarios que desee transmitirse un mensaje debe contar con una clave secreta, solo conocida por ambos, con la cual cifrar y decifrar, es decir usan la misma clave para el cifrado y desifrado de datos.
+En este sistema se debe se poseer un canal seguro por el cual deberian comunicarse la clave, sin embargo no siempre es facil disponer de este canal y por otra se necesitaria  otra clave por cada par de usuarios.
+Si la clave se pierde o es robada el sistema deja de ser seguro y por lo tanto se debe desechar dicha clave y generar una nueva.
+Para considerarse seguro debe cumplir varios requisitos basicos:
+	- Conocido el criptograma(texto cifrado) no se puede obtener de el ni el texto en claro ni la clave.
+	- Conocidos el texto en claro y el texto cifrado debe resultar más caro en timepo o dinero descifrar la clave que el valor posible de la informacion obtenida por terceros.
+
+Se podria decir que la principal desventaja de los sistemas simetricos son la distribucion de las claves, el peligro de muchas personas deban conocer una misma clave, la dificultad de almacenar y proteger diferentes claves, asi como la dificultad de transmision secreta de la clave a utilizar por cada pareja y el gran numero de claves necesarias cuando hay muchos usuarios.
+Los principales algoritmos utilizados actualmente son el DES, IDEA, AES y RC5.
+
+**
+Los sistemas asimetricos o de clave publica se basan en el uso de un par claves diferentes con una propiedad fundamental: una clave puede decifrar lo que la otra ha cifrado.
+Las claves Publico y privada tinen caracteristicas matematicas especiales, detal forma que se generan siempre a la vez, por parejas, estando cada una de ellas ligada intrinsecamente a la otra, de tal forma que si dos claves publicas son diferentes entonces sus claves privadas tambien lo son, e viceversa.
+Ambas estan relacionadas matematicamente, pero esta relacion debe ser lo suficientemente compleja como para que resulte muy dificil obtener una apartir de la otra. Este es el motivo por el que normalmente el usuario no elige estas claves, sino que lo hace un algoritmo especifico para ello y suelen ser de gran longitud.
+
+Una de las claves, la clave privada, es mantenida en secreto por el propietario, y la otra lo difunde ampliamente.
+
+Para considerarse seguro debe cumplir con lo siguiente:
+	- Conocido el texto cifrado no debe ser posible encontrar el texto en claro ni la clave privada.
+	- Conocido el texto cifrado y el texto en claro debe ser más caro en tiempo o dinero decifrar la clave privada que el valor posible de la informacion obtenida por terceros.
+	- Conocida la clave publica y el texto en claro no se puede generar un criptograma correcto encriptado a no ser con la clave privada.
+	- Dado un texto cifrado con una clave privada sólo existe una publica capaz de decifrarlo, y viceversa.
+
+La ventaja principal de los sistemas de clave publica frente a los simetricos es que la clave publica y el algoritmo de cifrado pueden ser de dominio publico, por tanto, no es necesario transmitir la clave privada.
+
+Como desventaja, los sistemas asimetricos dificaultan la implementacion del sistema y son mucho más lentos que los simetricos. Actualmente podemos citar el RSA, DSA, EL Gammal y ECC.
+
+
+Aunque actualmente no son clasificados dentro de la criptografia, existe las funciones de reumen o de HASH y juegan una rol importante en la criptografia moderna, y se utilizan en frecuentemente en la actualidad para complemetar a los sistemas criptograficos.
+Las funciones de resumen toman un mensaje como entrada y producen una salida conocida como hash-code, hash-result, hash-value o simplemente hash. Más precisamente una funcion de resumen mapea un cadena de tamaño finito arbitrario a otra cadena de tamaño fijo. En el algoritmo SHA1, por ejemplo, se toma un texto de tamaño de 1024 bits y  lo procesa en uno de tamaño de 128 bits; se toma otro texto de tamaño 4096 bits y se procesa en otro de tamaño de 128 bits.
+
+Los más conocidos actualmente son los algoritmo de SHA, como SHA1, SHA 224, SHA256, SHA512, el MD4 y MD5, y el RIPEMD-160.

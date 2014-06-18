@@ -1,0 +1,13 @@
+Sistemas Asimetricos
+
+Existen varias tecnicas de para el cifrado de clave publica, tambien conocidos como cifrado asimetrico.
+
+En este sistema la clave publica no necesita mantenerse en secreto, y de hecho, estara ampliamente difundida- solo su autenticacion es requerida para garantir que A es de hecho el unico quien sabe la clave privada correspondiente.
+
+La ventaja de estos sistemas, es que proveer la autentica clave publica es generalmente mucho más facil que ditribuir claves secretas de forma segura.
+Sin embargo, en ausencia de un medio confiable , este es susceptible a ataque de impersonificacion; existen muchas tecnicas en la practica para distribuir claves publicas autenticas, incluyendo el intercambio de claves en un canal seguro, usando un archivo publico confiable, usando un servidor de confianza en linea y usando un servidor fuera de linea y certificados.
+
+Funcionamiento...
+La entidad A tiene una clave publica e y corresponde con una clave privada d.En sistemas seguros, la tarea de computar d dada e es computacionalmente infeasible. La clave publica define una transformacion de cifrado Ee, mientras la clave privada define la Tranformacion de decifrado asociada, Cualquier entidad B deseando enviar un mensaje m a A obtiene una copia autentica de la clave publica e de A, usa la transformacion de cifrado para obtener el texto cifrado c 0 Ee(m), y transmite c a A. Para decifrar c, A aplica la transformacion de decifrado para obtener el mensaje original m 0 Dd(c).
+
+En Java debemos nombrar dos interfaces: java.security.PublicKey y java.security.PrivateKey. Todas las claves relacionadas con el sistema asimetrico de cifrado se implementaran con una de estas interfaces.

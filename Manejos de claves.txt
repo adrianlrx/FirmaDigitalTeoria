@@ -1,0 +1,7 @@
+Manejos de claves.
+Manejo de claves es un conjunto de tecnicas y procedimientos que soportan el establecimiento y mantenimiento de las relaciones con claves entre las partes autorizadas.
+Las terceras partes de confianza TTP (Trusted Third Parties) son los primeros clasificados basados en las interacciones en tiempo real con otras entidades.
+Hay tres tipos de categorias basadas en la locacion relativa y la comunicacion entre las partes A y B.
+ * In-Line:  T es un intermediario, sirviendo como medio de comunicacion en tiempo real entre A y B.
+ * On-Line: T esta envuelto en tiempo real durante cada instancia del protocolo (Comunicandose con A o B o ambos), pero A y B se comunican directamente que por medio de T.
+ * Off-Line: T no esta involucrado en el protocolo de tiempo real, pero prepara a priori la informacion, la cual esta disponible para A o B o ambos y que son usados durante le ejecucion del protocolo.

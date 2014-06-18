@@ -1,0 +1,11 @@
+Firma digital
+Se entiende por firma digital al resultado de aplicara un documento digital un procedimiento matematico que requiere informacion de exclusivo conocimiento de firmante encontrandose esta bajo su absoluto control. La firma digital debe ser susceptible de verificacion por terceras partes tal ue dicha verificacion simultaneamente permita identificar al firmante y detectar cualquier alteracion del documento digital posterior a sus firma.
+
+Tecnicamente, una firma digital es un resumen de un mensaje cifrado con la clave privada del signatario. Solamente la clave publica del signatario puede decifrar la firma, la cual provee autenticacion. Si el resumen del mensaje coincide con el resumen decifrado del mensaje de la firma, entonces la integridad esta asegurada tambien. 
+Las firmas digitales no preveen confidencialidad, ya que acompaña al mensaje en texto claro, cualquiera puede interceptar y leer el mensaje. Son utiles para la distribucion de software y documentacion por propiedad no falsificable.
+Juridicamente la firma digital posee 
+
+Presenta una analogia con la firma manuscrita, y para que sea equiparable a esta, debe cumplir las siguientes propiedades:
+	1 - Va ligada indisolublemente al mensaje. Una firma digitalvalida para un documento no puede ser valida para otro distinto.
+	2 - Solo puede ser generada por su legitimo titular. Al igual que cada persona tiene una forma diferente de escribir, y que la escritura de dos personas diferentes puede ser distinguida por la o las personas a quienes legalmente corresponde.
+	3 - Es publicamente verificable. Cualquiera puede compprobar su autenticidad en cualquier momento, de forma sencilla.

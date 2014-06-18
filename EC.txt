@@ -1,0 +1,4 @@
+Problema del logaritmo discreto sobre un grupo de puntos racionales de una curva eliptica sobre un campo finito.
+
+Este grupo es un derivado del problema del logaritmo discreto, solo que en lugar de estudiarlo en un grupo multiplicativo, lo estudia en curvas elipticas (no obstante este metodo es conocido como metodo de curvas elipticas), como el ECDSA.
+Estos algoritmo basan su potencia en el que el calculo de logaritmos sobre un sistema de curvas elipticas es computacionalmente aun más costoso que su cáculo sobre cuerpos finitos.

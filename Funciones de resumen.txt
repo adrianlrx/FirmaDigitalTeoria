@@ -1,0 +1,45 @@
+Funciones de resumen
+
+Aunque actualmente no son clasificados dentro de la criptografia, existe las funciones de resumen o de HASH y juegan una rol importante en la criptografia moderna, en su uso particular en la integridad de datos y autenticacion de mensajes.
+
+Las funciones de resumen toman un mensaje arbitrario como entrada y producen una salida conocida como hash-code, hash-result, hash-value o simplemente hash. En programacion se le denomina message digest o solo digest.
+
+Más precisamente una funcion de resumen mapea un cadena de tamaño finito arbitrario a otra cadena de tamaño fijo. En el algoritmo SHA1, por ejemplo, se toma un texto de tamaño de 1024 bits y  lo procesa en uno de tamaño de 128 bits; se toma otro texto de tamaño 4096 bits y se procesa en otro de tamaño de 128 bits. Los más conocidos actualmente son los algoritmo SHA, como SHA1, SHA 224, SHA256, SHA384, SHA512, el MD4, MD5, y el RIPEMD-160.
+
+Una funcion de resumen es una funcion H la cual, como minimo, debe seguir estas dos cualidades:
+	- Compresion. h mapea una entrada M de tamaño finito de bits arbitrario, auna salida h(M) de tamaño fijo de bits N.
+	- Facil computo. Dada H y una entrada M,h(M) es facil de computar.
+
+Como se define anteriormente implica que las funciones de resumen no necesitan clave.
+
+Propiedades de una funcion de resumen.
+h(M) posee la siguientes caracteristicas:
+	1 - Unidirecionalidad: conocido un resumen h(M), debe ser computacionalmente imposible encontrar M a partir de dicho resumen.
+	2 - Compresion: A paratir de un mensaje de cualquierlogitud, el resumen h(M) debe tener una longitud fija. Lo normal es que la longitud de h(M) sea menor que el de mensaje M.
+	3 - Facilidad de calculo: Debe ser facil calcular h(M) a partir de un mensaje M.
+	4 - Difusion: el resumen h(M) debe ser una funcion compleja de todos los bits del mensaje M si se modifica un solo bit del mensaje M, el hash h(M) deberia cambiar la mitad sus bits aproximadamente.
+	5 - Colision Simple: sera computacionalmente imposible conocido M, encontrar otro M' tal que h(M) == h(M'). Esto se conoce como resistencia debil a las colisiones.
+	6 - Colision Fuerte: Sera computacionalmente dificil encontrar un (M, M') de forma que h(M) == H(M'). Esto se conoce como resistencia fuerte a las colisiones.
+
+
+El Algoritmo SHA-1
+El Secure Hash Algoritm (SHA-1), fue propuesto por el National Institute for Standars and Technology (NIST) para ciertas aplicaciones  del govierno federal de los U.S.
+
+El Java Cryptography Architecture (JCA) hace muy facil el uso del "message digest". Con la clase java.security. MessageDigest se encapsula las funciones hash.
+
+Funcionamiento en Java.
+
+public byte[] resumen(byte[]  msg){
+	MessageDigest md = MessageDigest.getInstance("SHA-1");
+	md.update(msg)
+	byte[] digest = md.digest();
+	return digest;
+}
+
+La funcion arriba explica como se implementan comunmente las funciones de resumen el Java:
+ * Se recibe el mensaje en un vector de bites, msg.
+ * Se Instancia la clase MessageDigest para el algoritmo SHA-1, md.
+ * Se llama al metodo update() para agregar el mensaje msg al calculo.
+ * Se llama al metodo digest() para calcular el resumen, este devuelve como resultado un vector de bytes como resultado.
+
+

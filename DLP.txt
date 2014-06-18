@@ -1,0 +1,5 @@
+EL problema del Logaritmo Discreto del grupo multiplicativo de un campo finito (DLP).
+
+En seguridad muchas tecnicas criptofgraficas dependen de la intratabilidad del problema del logaritmo discreto, como ELGammal, DSA. 
+La potencia de estos algoritmos se basa que no existe un metodo eficiente de calcular x a partir de la expresion y = a^x (mod p) donde p es un numero primo.
+Matematicamente se trata de un metodo bastante más complejo, pero computacionalmente es igual de complicado que el problema de la factorizacion entera.
