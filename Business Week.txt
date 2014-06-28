@@ -1,0 +1,97 @@
+Executive Briefing
+
+A market mostly for the giants
+
+IBM and Xerox will leave little room for other competitors to move in
+
+Business Week
+
+June 30, 1975
+
+Word processing is the focal point today for competition in the upcoming office-of-the-future market. International Business Machines Corp. created the WP market, and until three years ago the computer giant had it all to itself. Despite the recent onslaught of competitors, led by Xerox Corp., IBM dominates and sets the pace in word processing and clearly intends to do the same with the office of the future.
+
+IBM's Office Products Div. still accounts for nearly 90% of the $450-million market for editing typewriters. And despite its current stable of products, which are characterized by some as being mostly obsolete and difficult to operate, the smallest IBM share of the 1980 market envisioned envisioned by analysts is two-thirds of a business ranging from $1.25-billion to $1.4-billion.
+
+The sharpening picture of the office of the future has prompted a flurry of activity in recent months among traditional office-equipment producers. They have eagerly courted the handful of small companies pioneering in the WP business, many of which have recently been or are in the process of being acquired. But buying into the business even now may be too late for some of the old-line office-equipment makers.
+
+To make it in this market will take not only a courageous business plan that will be long and difficult to develop but also incredible amounts of money. James N. Mills, president of giant Litton Industries' Royal Typewriter Co., admits that "we just wouldn't have the human or financial resources to introduce word processing concepts nationwide." Mills flly intends to survive, but more as a follower than a leader.
+
+To be dominant in the WP business, says Edward I. Rosen, marketing head of Vydec Corp., "financial and distribution strengths are the most important assets, not technology." But, he points out, a small company like Vydec can find a niche in which to survive if it develops outstanding technology.
+
+IBM, with all its financial and distribution strengths, does see one factor that may limit the growth of the industry. "It will be the willingness of people to make changes in their offices," says William F. Laughlin, vice-president of IBM's Office Products Div. Coincidently, this scenario neatly fits IBM's market strategy. It has a huge installed lease base, and it is in no hurry to make these products obsolete. "IBM won't come out with any new technology until its rental base is threatened," says Vydec's Rosen.
+
+To many observers, it appears that IBM's management has not yet decided how best to go after the office-of-the-future market and what role its computer divisions will play.Some are convinced that a battle still rages over which division will sell what and when.
+
+For example, when IBM's communications magnetic card (CMC) typewritter was scheduled for introduction in 1971, the Office Products Div. planned to use it as an input device to computer memories. But one week before introduction, IBM's Data Processing Div. objected to the plan, says a former IBM executive. The computer people, he says, figured that the new machine could displace a lot of their computer equipment. As a result, IBM has sold the CMC machine primarily for communications between word processors.
+
+Just recently, an IBM Office Products Div. customer, Texas Eastern Transmission Corp., ordered two Linolex word processors that will be connected to its new Honeywell 6600 computer. "We've been talking about linking up with the computer for years," says George W. Graves, office services manager at the Houston utility. "The IBM Office Products people would always say that they could interface with the computers, but they never did show me anything that could do it."
+
+IBM watchers see the division going one of two ways. Office Products now has annual revenues of $1-billion and the best profit margins of any IBM division. So IBM does not want to get rid of the division, something it is confronted with in the Justice Dept.'s antitrust suit. Many of IBM's Data Processing Div. salesmen have joined Office Products in recent years, and some of them reportedly are now pushing the two divisions closer together with an eye toward a merger in four or five years.
+
+But other observers believe that a second IBM computer division, General Systems, will sell office system products when they come on the market and that Office Products will continue to sell the stand-alone, text-editors.
+
+Xerox' approach
+
+In contrast, Xerox' strategies in tackling the office-of-the-future market seem to be more clearly spelled out. It made a delayed debut into the text-editing typewriter market last October. For the copier giant, it was a step toward what could become the company's primary market in the 1980s.
+
+Two years ago, Chairman C. Peter McColough publicly gave his company its marching orders when he said: "In the next decade, if we are to generate real efficiencies in the office, we're going to have to alter traditional structures. The idea of one secretary for one executive is no longer efficient or economical. And we have to reduce and reposition the role of paper."
+
+But moving to the office of the future "cannot be a social revolution, it has to be an evolution," says Robert J. Potter, who is leading the Xerox charge here. So learning, perhaps, from IBM's mistakes, Xerox is going slowly and carefully. "The office information system has to be easy to use, require little training, and it must be adaptable to changing requirements," says Jack E. Goldman, Xerox chief scientist. "It will not be a mammoth system for a whole division, plant, or company, but will focus on a manager and his department. What we have to develop," he says, "is the 'friendly' machine."
+
+Xerox' strategy in the office differs fundamentally from IBM's in one major respect. IBM's strength is the big computer center, while Xerox, says Goldman, "for both economic and technical reasons, believes in decentralizing the processing for the office system of the future." Xerox' business strategy will be to capitalize on the most common office functions. It ultimately will provide all of the basic building blocks to perform these functions, including the editing terminal, processor (minicomputer), laser printer, and an information storage-and-retrieval system.
+
+Experimental models of some of the building blocks for an office system are already operating at Xerox' Palo Alto (Calif.) Research Center. A modified Xerox copier under minicomputer control employs a scanning laser to "paint" various type fonts and sizes, and it turns out documents at the rate of one page per second. The center also built a minicomputer-controlled text-editing display terminal, called Gypsy, which is now being used for editing books at Xerox' Ginn & Co., a Lexington (Mass.) textbook publisher.
+
+Although hardware trouble, primarily print quality, delayed the introduction of Xerox' electronic editing typewriter for a year or more, things have been running smoothly since its introduction last fall. "We've already increased production beyond plan this year," declares Potter, who has headed the Office Systems Div. since its formation in January.
+
+Potter, a very competitive manager, has created the feeling of a small, start-up company in the division. He moved into the management spot from the technical side at Xerox and at IBM, and already has more than 1,000 people in the division spread out over Dallas.
+
+The 90,000-sq.-ft. Carrollton (Tex.) manufacturing plant is running some second-shift operations, and Xerox expects it to go to two full shifts by the end of the year, says Walter G. Scott, plant manager. This will be sufficient to handle the production plan through early 1977. As is Xerox' style, the plant is basically an assembly plant -- "more like the auto industry than IBM," declares the veteran Scott, who has 21 years of IBM manufacturing management experience. He expects to change over to an integrated plant slowly.
+
+Xerox is also on schedule for opening sales offices that it decided on two years ago, says Donald P. Roth, product marketing manager. A dozen offices already are open, New York opened this week, and West Coast offices are set for the third quarter. The division's sales force is building up rapidly and should total nearly 500 by the end of the year. If it does, analysts figure that Xerox will sell 7,000 or more editing typewriters this year. And if the division is successful in building its sales force to 2,500 by the late 1970s, the company should be able to capture more than 20% of the text-editing typewriter shipments and 10% to 15% of the installed base by the end of 1979, forecasts Arthur D. Little, Inc.
+
+Add IBM's projected 65% share of the market to this, and little is left for the rest of the industry. But the outlook is not dampening the rash of new product and merger activities at many of the traditional office-equipment makers. What they must face up to, warns Alan Purchase, senior industrial economist at Stanford Research Institute, "is that they can't exist with 'me-too' products under the IBM umbrella."
+
+Acquisitions
+
+A.B. Dick Co., the 91-year-old Chicago company that started with the mimeograph machine, plans to enter the text-editing typewriter market. It is field-testing a display version that can communicate with computer systems. It was to be announced this spring but is not expected now until the end of the year because of a recession-caused cutback in R&D spending.
+
+In February, Burroughs Corp. made its first acquisition in nearly 20 years by buying Graphic Sciences, Inc., the Danbury (Conn.) facsimile equipment maker. "Word processing is a natural progression for Burroughs," says Martin Simpson, a New York institutional analyst who follows the company. "But even though Burroughs put one toe in the water [by acquiring Graphic Sciences]," he says "it's hard to say if they will go in all the way."
+
+In another move that surprised industry watchers, Minnesota Mining & Mfg. Co. in April purchased Linolex Systems, Inc., a builder of WP display terminals. Carl A. Kuhrmeyer, group vice-president for 3M's Graphic Systems Group, says that 3M will expand Linolex's marketing efforts over the next six months, "which is something that it didn't have before."
+
+"Royal Typewriter is just really getting started in word processing" says Mills. Royal got the green light on funding from Litton headquarters about six months ago and is now building up text-editing typewriter production and distribution. Mills figures he has the two ingredients necessary for success in WP: the major components that go into the product and a nationwide support organization to back distribution channels.
+
+The word-processing outlook at Sperry Rand Corp. runs counter to that at most companies. Last summer, Sperry folded the Remington Div. into Univac, its EDP division. A 1972 licensing agreement with Redactron Corp. gave Remington an early entry to the WP market. But the agreement has ended, the distributor sales force disbanded, and the remainder of the word processors given to Remington's small band of typewriter salesmen to close out. The price was slashed, perhaps as much as 50%, on the big inventory.
+
+Univac now has a team of engineers studying the market to determine whether they should develop a word processor that is not a "me-too" item. One close observer expects that Univac will bypass the WP market, at least for now, and concentrate its resources on the EDP market. "Remington will drown in Univac," he predicts.
+
+Pitney Bowes, Inc., the mail equipment supplier, is looking at possible acquisitions in both facsimile and word processing, but Chairman Fred T. Allen, "doesn't see any technology that's going to have serious impact on what we are presently doing -- at least not for the next 10 years."
+
+But industry observers are critical of the company's progress here. "Pitney Bowes has studied WP carefully, but can't make the decision to go," SRI's Purchase says. "It makes a lot of sense for them to introduce an automatic typewriter with their force of 2,500 field salesmen -- which is their biggest asset." A spokesman does admit that Redactron is "one of at lest three WP manufacturers we are taking a preliminary look at." Says Evelyn Berezin, Redactron president: "We've talked to a lot of people through the years, but no negotiations are going on now."
+
+Financial strains
+
+Redactron, which this month turned out its 10,000th word processor (some of them sold under the Remington label), reflects some of the problems of smaller companies in this market. Technology is not the issue for a small company, says Berezin, who figures she leads the market here. "The issue is a financial one: How big a piece of the market do you want and how fast do you want to grow? The faster you grow, the more money you need, and getting money in the past year has been a horror," she laments.
+
+One of the most expensive tasks facing a small company in this market is expanding its sales force. And this is where Lexitron Corp. has been spending large sums of money recently. The maker of display text-editing stations, or "TV typewriters," has more than doubled its three dozen salesman so far this year. To survive and grow, Lexintron will have to continue its current strategy, says Jonathan Pugh III, head of marketing. "Pick a market segment that fits in with the marketing strategies of others and introduce features that keep us unique in our segment."
+
+But to other small companies, going it alone now seems nearly impossible. "Because of capital requirements, a company like ours has to have an association with a larger company," says Theodore L. Levin, founder of Daconics Corp., a builder of a "shared logic" word-processing system. He has installed 16 of the $45,000-and-up systems since August.
+
+One big company very interested in Daconics is Xerox, which last week lent the small company $500,000 and gained a 120-day option to acquire it. Acquisition of Daconics could propel Xerox into the "shared logic" end of the WP market a couple of years earlier than if it developed its own system. Xerox is interested in such a system because it is the next logical step.
+
+"It would take Xerox about two years to get its version of the Daconics system on the market -- or 1977 to 1978," one competitor estimates. The Daconics system includes several small-display terminals and typewriter stations sharing a disk memory and a minicomputer controller.
+
+It will be a while, however, before IBM enters the market for shared-processor systems because of the impact that such a product would have on its installed base of stand-alone text-editing typewriters. One IBM watcher estimates such an IBM product will come in the "early 1980s at the earliest."
+
+The leading minicomputer maker, Digital Equipment Corp., appears to be close to entering this portion of the WP market. A WP product line group has just been formed under Jack Gilmore, who says that he is looking at the "sophisticated end of word processing, since the interesting developments are in such things as floppy disks and CRT terminals where DEC has expertise."
+
+Another one of the big three minicomputer makers, Hewlett-Packard Co., also is looking into WP. Paul C. Ely, Jr., who heads HP's Computer Group, says that he is not likely to make a large commitment to WP in the next two years. But he adds that it is "unlikely, too, that we won't go to WP."
+
+HP will announce in August a new version of its Model 2640 computer display terminal that, Ely says, "is like a WP unit without a typewriter." But it will be sold strictly as a computer terminal. HP is about to put the $2,640 terminals in its sales office network where they will be used not only for orders but for electronic mail. Notes Ely: "There is no better way to learn about a market than to try it out in your own operations."  
+
+GRAPHIC: Picture 1, no caption, Victor Valla; Picture 2, Potter: "We've already increased production beyond plan this year."; Picture 3, Berezin: Financing, not technology, is the issue for a small company.
+
+ 
+
+Copyright 1975 McGraw-Hill, Inc.

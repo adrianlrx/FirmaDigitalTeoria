@@ -1,0 +1,123 @@
+Commons Email
+/*A simple text email*/
+
+
+Email email = new SimpleEmail();
+email.setHostName("smtp.googlemail.com");
+email.setSmtpPort(465);
+email.setAuthenticator(new DefaultAuthenticator("username", "password"));
+email.setSSLOnConnect(true);
+email.setFrom("user@gmail.com");
+email.setSubject("TestMail");
+email.setMsg("This is a test mail ... :-)");
+email.addTo("foo@bar.com");
+email.send();
+
+
+/*Sending emails with attachments*/
+
+import org.apache.commons.mail.*;
+...
+
+  // Create the attachment
+  EmailAttachment attachment = new EmailAttachment();
+  attachment.setPath("mypictures/john.jpg");
+  attachment.setDisposition(EmailAttachment.ATTACHMENT);
+  attachment.setDescription("Picture of John");
+  attachment.setName("John");
+
+  // Create the email message
+  MultiPartEmail email = new MultiPartEmail();
+  email.setHostName("mail.myserver.com");
+  email.addTo("jdoe@somewhere.org", "John Doe");
+  email.setFrom("me@apache.org", "Me");
+  email.setSubject("The picture");
+  email.setMsg("Here is the picture you wanted");
+
+  // add the attachment
+  email.attach(attachment);
+
+  // send the email
+  email.send();
+
+
+/*Logo*/
+import org.apache.commons.mail.*;
+...
+
+  // Create the attachment
+  EmailAttachment attachment = new EmailAttachment();
+  attachment.setURL(new URL("http://www.apache.org/images/asf_logo_wide.gif"));
+  attachment.setDisposition(EmailAttachment.ATTACHMENT);
+  attachment.setDescription("Apache logo");
+  attachment.setName("Apache logo");
+
+  // Create the email message
+  MultiPartEmail email = new MultiPartEmail();
+  email.setHostName("mail.myserver.com");
+  email.addTo("jdoe@somewhere.org", "John Doe");
+  email.setFrom("me@apache.org", "Me");
+  email.setSubject("The logo");
+  email.setMsg("Here is Apache's logo");
+  
+  // add the attachment
+  email.attach(attachment);
+
+  // send the email
+  email.send();
+
+
+ /*Sending HTML formatted email*/
+
+import org.apache.commons.mail.HtmlEmail;
+...
+
+  // Create the email message
+  HtmlEmail email = new HtmlEmail();
+  email.setHostName("mail.myserver.com");
+  email.addTo("jdoe@somewhere.org", "John Doe");
+  email.setFrom("me@apache.org", "Me");
+  email.setSubject("Test email with inline image");
+  
+  // embed the image and get the content id
+  URL url = new URL("http://www.apache.org/images/asf_logo_wide.gif");
+  String cid = email.embed(url, "Apache logo");
+  
+  // set the html message
+  email.setHtmlMsg("<html>The apache logo - <img src=\"cid:"+cid+"\"></html>");
+
+  // set the alternative message
+  email.setTextMsg("Your email client does not support HTML messages");
+
+  // send the email
+  email.send();
+
+
+/*Sending HTML formatted email with embedded images*/
+
+import org.apache.commons.mail.HtmlEmail;
+...
+
+  // load your HTML email template
+  String htmlEmailTemplate = ....
+
+  // define you base URL to resolve relative resource locations
+  URL url = new URL("http://www.apache.org");
+
+  // create the email message
+  HtmlEmail email = new ImageHtmlEmail();
+  email.setDataSourceResolver(new DataSourceResolverImpl(url));
+  email.setHostName("mail.myserver.com");
+  email.addTo("jdoe@somewhere.org", "John Doe");
+  email.setFrom("me@apache.org", "Me");
+  email.setSubject("Test email with inline image");
+  
+  // set the html message
+  email.setHtmlMsg(htmlEmailTemplate);
+
+  // set the alternative message
+  email.setTextMsg("Your email client does not support HTML messages");
+
+  // send the email
+  email.send();
+

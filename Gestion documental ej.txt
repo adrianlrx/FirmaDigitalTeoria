@@ -1,0 +1,35 @@
+Gestion documental
+
+¿Que es el "paperless office" o la oficina sin papeles?
+
+El concepto nació en los años 70 tras la irrupción de los ordenadores en la vida de las empresas. Entonces los eslogan publicitarios decían que los papeles irían desapareciendo paulativamente. El término paperless lo acuñó por primera vez Business Week en el año 1975 en un artículo que plasmaba su visión futurista de lo que sería una oficina.
+
+#########################
+Los procesadores de texto son el punto focal hoy en dia en la competicion de proximo mercado de "La oficina del futuro"....
+->articulo Bussiness Week 1975
+#########################
+
+Al día de hoy y después de tantos años, los objetivos de la oficina sin papeles no se han cumplido y eso es debido a varios factores que nada tiene que ver con la tecnología.
+
+1- Factores legales y normativos: Hablamos de la normativa , leyes que permitan una implantación de sistemas digitáles y desplacen el uso necesario de los papeles . Normas que permitan la sustitución de la firma manuscrita, necesaria en muchos documentos, por firmas electrónicas que permitan justificar la integridad de los documentos durante la custodia a L/P.
+
+2- Factores sociologicos y psicológicos: Hablamos de los usos y constumbres. El hábito de la impresión sigue siendo una de las barreras mas importantes porque mucho usuarios piensan en la dificultad de leer en pantalla y existe un arraigo psicológico al papel que ofrece mayor seguridad al usuario.
+
+Es posible la oficina sin papeles hoy en dia porque los factores que impedian su implantación ya están cambiando, debido principalmente a:
+
+- La administración pública cada vez es mas consciente de las ventajas e impacto que la administración electrónica tiene en la economía, potenciado la competitividad mejorando la eficiencia de los procesos etc...y no digamos el impacto medioambiental. Están mejorando las leyes para que los procesos electrónicos se equiparen legalmente a los que tradicionalmente se hacían en papel.
+
+- Los costes: los usuarios son conscientes de los altos costes económicos y mediombientales a los que se está incurriendo en todos aquellos procesos y flujos de trabajo en los que el eje central es el papel. ¿Cuanto tiempo se pierde en la manipulación y búsqueda de la documentación?
+
+Se recomienda a las organizaciones adoptar políticas que permitan la implantación de la oficina sin papeles. Potenciar politicas que rompan una de las mayores barreras, la resistencia al cambio, la mentalidad de los usuarios. Tecnológicamente podemos ofrecer soluciones que sustituyan los procesos que se hacen en papel, no es un problema de la tecnología es un problema de mentalidad.
+
+Otro factor sin duda para el desarrollo de la oficina sin papeles, es la necesidad de disponer de herramientas que permitan gestionar los contenidos generados en la organización cuyo origen puede ser el papel, o un dato que se genera en el sistema de información. La posibilidad técnica del generar flujos de trabajo facilita mucho la implantación de las oficinas sin pepeles.
+
+Los objetivos que se ha marcado para el futuro son:
+
+1- Demostrar que es posible reducir los tiempos que los usuarios dedican a la localización y archivado de la documentación.
+2- Evitar la recopilación de papeles para el análisis de la información.
+3- Evitar los procesos ineficientes, por poner un ejemplo: el coste que tiene el procesamiento de las facturas.
+4- Cumplimiento de las disposiciones legales, cada día existe mas presión legal acerca de la custodia y no pérdida de la documentación.La digitalización es una salida.
+5- Integración con otras aplicaciones ERP, CRM, HR etc.. para que no se rompa la cadena digital.
+6- Demostrar que es posible una reducción significativa del impacto medioambiental que supone la gestión en papel.
